@@ -28,7 +28,7 @@ VueStudy父模块
 1.9     basic-9-cssbind             学习动态绑定CSS
 1.10    basic-10-if                 学习条件渲染
 1.11    basic-11-for                学习v-for渲染
-
+1.12    basic-12-picture            学习控制picture
 
 #### 参与贡献
 1. RyzeZhao
