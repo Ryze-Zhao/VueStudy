@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>第一课</title>
@@ -10,8 +11,40 @@
 <body>
     <!--basic-1就是根容器-->
     <div id="basic-1">
-       
-        
+        <ul>
+            <!-- 跟Java的增强For循环一样，characters被遍历List，char是对象 -->
+            <li v-for="char in characters">{{char}}</li>
+        </ul>
+
+        <ul>
+            <!-- 跟Java的增强For循环一样，users被遍历List，user是对象 -->
+            <li v-for="user in users">{{user.name}}-{{user.age}}</li>
+        </ul>
+
+        <ul>
+            <!-- 跟Java的增强For循环一样，users被遍历List，user是对象 -->
+            <li v-for="(user,index) in users">{{index+1}}.{{user.name}}-{{user.age}}</li>
+        </ul>
+
+        <div v-for="(user,index) in users">
+            <h3>{{index+1}}.{{user.name}}</h3>
+            <p>Age-{{user.age}}</p>
+        </div>
+
+        <!-- 以上就导致在F12中会一直有div被渲染，所以需要引入列表渲染 -->
+        <template v-for="(user,index) in users">
+            <h3>{{index+1}}.{{user.name}}</h3>
+            <p>Age-{{user.age}}</p>
+        </template>
+
+        <!-- 这个是拿到数据，其实感觉跟name-user.name和val-user.age一样 -->
+        <template v-for="(user,index) in users">
+            <!-- 前面是值value，后面是键key -->
+            <template v-for="(val,key) in user">
+                <p>{{key}}-{{val}}</p>
+            </template>
+        </template>
+
     </div>
     <script src="my.js"></script>
 </body>
