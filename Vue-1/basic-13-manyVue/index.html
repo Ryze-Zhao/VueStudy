@@ -9,14 +9,15 @@
 </head>
 
 <body>
-    <!--basic-1就是根容器-->
+    <h1>初始化多个Vue实例对象</h1>
     <div id="basic-1">
-        <h1>初始化多个Vue实例对象1</h1>
-
+        <h2>{{title}}</h2>
+        <p>{{greet}}</p>
     </div>
     <div id="basic-2">
-        <h1>初始化多个Vue实例对象2</h1>
-
+        <h2>{{title}}</h2>
+        <p>{{greet}}</p>
+        <button v-on:click="changeVue1Title">Change Vue1 Title</button>
     </div>
     <script src="my.js"></script>
 </body>
