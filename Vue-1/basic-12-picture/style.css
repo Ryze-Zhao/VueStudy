@@ -1,0 +1,27 @@
+#picture1{
+    width: 200px;
+    height: 500px;
+    margin: 0 auto;
+    background: url(img/img1.jpg) center no-repeat;
+    background-size: 80%;
+}
+#picture1.health0{
+    background-image: url(img/img2.jpg);
+}
+#picture1-health{
+    width: 200px;
+    border: 2px #000 solid;
+    margin: 0 auto 20px auto;
+}
+
+#picture1-health div{
+    height: 20px;
+    background: crimson;
+}
+#controls{
+    width: 200px;
+    margin: 0 auto;
+}
+#controls button{
+    margin-left: 20px;
+}
