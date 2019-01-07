@@ -29,6 +29,10 @@ VueStudy父模块
 1.10    basic-10-if                 学习条件渲染
 1.11    basic-11-for                学习v-for渲染
 1.12    basic-12-picture            学习控制picture
+1.13    basic-13-manyVue            学习多个Vue实例
+
+
+
 
 #### 参与贡献
 1. RyzeZhao
