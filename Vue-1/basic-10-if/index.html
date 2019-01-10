@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>第一课</title>
@@ -10,9 +11,18 @@
 <body>
     <!--basic-1就是根容器-->
     <div id="basic-1">
-       <h1>v-if条件语句</h1>
-       
-       
+        <h1>v-if条件语句</h1>
+        <button v-on:click="error=!error">Toggle Error</button>
+        <button v-on:click="success=!success">Toggle Success</button>
+        <!-- 这样子会存在一个问题，如果当前显示200，你按404，那么404会出来，因为他在if中 -->
+        <p v-if="error">404</p>
+        <p v-else-if="success">200</p>
+        <p v-else>两者都false</p>
+
+        <!-- 这个和上面的区别是，F12，show可以看到，if看不到 -->
+        <p v-show="error">404</p>
+        <p v-show="success">200</p>
+
     </div>
     <script src="my.js"></script>
 </body>

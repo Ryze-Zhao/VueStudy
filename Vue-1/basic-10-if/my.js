@@ -2,10 +2,11 @@
 new Vue({
     el: "#basic-1",
     data: {
-       
-    },methods: {
-        
-    },computed: {
-        
+        error: false,
+        success: false
+    }, methods: {
+
+    }, computed: {
+
     }
 });
