@@ -27,7 +27,7 @@ VueStudy父模块
 1.8     basic-8-computed            学习计算属性
 1.9     basic-9-cssbind             学习动态绑定CSS
 1.10    basic-10-if                 学习条件渲染
-
+1.11    basic-11-for                学习v-for渲染
 
 
 #### 参与贡献
