@@ -13,7 +13,10 @@
     <div id="basic-1">
         <h1>动态 CSS Class</h1>
         <h2>示例 1</h2>
-
+        <!-- changeColor是css里面的，dataChangeColor是js里面的data，现在这个意思是如果dataChangeColor为true，显示changeColor样式-->
+        <div v-on:click="dataChangeColor = !dataChangeColor" v-bind:class="{changeColor:dataChangeColor}">
+            <span>Henry</span>
+        </div>
         <h2>示例 2</h2>
 
     </div>

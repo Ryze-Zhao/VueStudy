@@ -2,7 +2,8 @@
 new Vue({
     el: "#basic-1",
     data: {
-       
+       dataChangeColor:false,
+       dataChangeLength:false
     },
     methods: {
         

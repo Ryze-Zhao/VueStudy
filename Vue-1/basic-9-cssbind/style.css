@@ -5,11 +5,9 @@ span{
     color: #fff;
     margin: 10px 0;
 }
-
 .changeColor span{
     background: green;
 }
-
 .changeLength span:after{
     content:"length";
     margin-left: 10px;
