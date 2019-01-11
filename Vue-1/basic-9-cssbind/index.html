@@ -18,7 +18,11 @@
             <span>Henry</span>
         </div>
         <h2>示例 2</h2>
-
+        <button v-on:click="dataChangeColor = !dataChangeColor">dataChangeColor</button>
+        <button v-on:click="dataChangeLength =!dataChangeLength">dataChangeLength</button>
+        <div v-bind:class="myComputed">
+            <span>Henry</span>
+        </div>
     </div>
     <script src="my.js"></script>
 </body>
