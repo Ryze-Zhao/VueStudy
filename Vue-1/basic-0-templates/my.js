@@ -3,8 +3,9 @@ new Vue({
     el: "#basic-1",
     data: {
        
-    },
-    methods: {
+    },methods: {
+        
+    },computed: {
         
     }
 });
