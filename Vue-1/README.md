@@ -25,6 +25,9 @@ VueStudy父模块
 1.6 basic-6-keyboardEvent       学习键盘事件
 1.7 basic-7-twoWayBind          学习双向绑定，index是使用methods的，index.1是使用v-model实现的
 1.8 basic-8-computed            学习计算属性
+1.9 basic-9-cssbind             学习动态绑定CSS
+
+
 
 
 #### 参与贡献
