@@ -1,2 +1,3 @@
 v-bind、v-on等调用方法时，无参数可以不写(),但是{{}}调用方法必须写(),因为前者，Vue知道必定调用方法，而后者他不知道;
 v-on可以更换为符号@
+methods与computed的区别在于methods有相关联的也会更改，而computed不会，具体查看basic-8-computed
