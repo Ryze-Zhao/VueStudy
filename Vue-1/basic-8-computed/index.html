@@ -15,6 +15,12 @@
        <button @click="b++">B++</button>
        <p>A-{{a}}</p>
        <p>B-{{b}}</p>
+       <!--这个是使用methods中的方法-->
+       <p>Age+A={{addToA()}}</p>
+       <p>Age+B-{{addToB()}}</p>
+       <!--这个是使用computed中的方法,注意这时不需要加(),不然他会到methods中找方法-->
+       <p>Age+A={{addToA}}</p>
+       <p>Age+B-{{addToB}}</p>
     </div>
     <script src="my.js"></script>
 </body>
