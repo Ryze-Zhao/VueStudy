@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <!-- 键盘的键参考这个网址https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values -->
 <!-- 只有在 `key` 是 `Enter` 时调用 `vm.submit()` -->
 <!-- <input v-on:keyup.enter="submit"> -->
-
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -16,14 +14,15 @@
 <body>
     <!--basic-1就是根容器-->
     <div id="basic-1">
+        <!-- 与index.html是一样的 -->
         <h1> 双向数据绑定（表单输入绑定） /双向绑定肯定和input、textarea、select等有关</h1>
         <label>姓名：</label>
-        <!-- 如果不写.enter的话就会一直触发 -->
-        <input ref="refName" type="text" v-on:keyup.enter="logName">
+        <!-- v-model是绑定JS中data的属性名字，如果js中有初始值，那么双向绑定后，input和span都会有初始值 -->
+        <input ref="refName" type="text" v-model="name">
         <span>{{name}}</span>
         <label>年龄：</label>
-         <!-- 需要按alt+enter才有效 -->
-        <input ref="refAge" type="text" v-on:keyup.alt.enter="logAge">    
+         <!-- v-model是绑定JS中data的属性名字，如果js中有初始值，那么双向绑定后，input和span都会有初始值 -->
+        <input ref="refAge" type="text" v-model="age">
         <span>{{age}}</span>
     </div>
     <script src="my.js"></script>
