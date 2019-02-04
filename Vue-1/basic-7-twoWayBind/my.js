@@ -2,14 +2,21 @@
 new Vue({
     el: "#basic-1",
     data: {
-
+        name: "",
+        age: ""
     },
     methods: {
         logName: function () {
-            console.log("你正在输入名字！");
+            // 获取HTML中ref属性下叫refName名字的值
+            console.log(this.$refs.refName.value);
+            this.name = this.$refs.refName.value;
+
         },
         logAge: function () {
-            console.log("你正在输入年龄！");
+            // 获取HTML中ref属性下叫refAge名字的值
+            console.log(this.$refs.refAge.value);
+            this.age = this.$refs.refAge.value;
+
         }
     }
 });

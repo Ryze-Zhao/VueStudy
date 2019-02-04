@@ -23,7 +23,7 @@ VueStudy父模块
 1.4 basic-4-events              学习使用事件（主要演示鼠标事件）
 1.5 basic-5-eventsModifier      学习事件修饰符（主要演示鼠标事件）
 1.6 basic-6-keyboardEvent       学习键盘事件
-
+1.7 basic-7-twoWayBind          学习双向绑定
 
 #### 参与贡献
 1. RyzeZhao

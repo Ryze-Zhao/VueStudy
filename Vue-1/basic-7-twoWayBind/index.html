@@ -16,13 +16,15 @@
 <body>
     <!--basic-1就是根容器-->
     <div id="basic-1">
-        <h1> 键盘 Events /双向绑定肯定和input、textarea、select等有关</h1>
+        <h1> 双向数据绑定（表单输入绑定） /双向绑定肯定和input、textarea、select等有关</h1>
         <label>姓名：</label>
         <!-- 如果不写.enter的话就会一直触发 -->
-        <input type="text" v-on:keyup.enter="logName">
+        <input ref="refName" type="text" v-on:keyup.enter="logName">
+        <span>{{name}}</span>
         <label>年龄：</label>
          <!-- 需要按alt+enter才有效 -->
-        <input type="text" v-on:keyup.alt.enter="logAge">        
+        <input ref="refAge" type="text" v-on:keyup.alt.enter="logAge">    
+        <span>{{age}}</span>    
     </div>
     <script src="my.js"></script>
 </body>
