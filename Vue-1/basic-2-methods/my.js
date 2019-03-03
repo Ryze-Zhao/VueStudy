@@ -3,6 +3,11 @@ new Vue({
     el:"#basic-1",
     data:{
         name:"测试1"
+    },
+    methods:{
+        myFunction:function(){
+            return "测试Methods!";
+        }
     }
 });
 
