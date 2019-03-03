@@ -3,7 +3,8 @@ new Vue({
     el:"#basic-1",
     data:{
         name:"测试1",
-        website:"https://www.hehaozhao.top"
+        website:"https://www.hehaozhao.top",
+        webSiteTag:"<a href='https://www.hehaozhao.top'>SecondSite</a>"
     }
 });
 
