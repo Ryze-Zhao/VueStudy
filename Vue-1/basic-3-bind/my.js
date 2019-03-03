@@ -4,17 +4,6 @@ new Vue({
     data:{
         name:"测试1",
         website:"https://www.hehaozhao.top"
-    },
-    methods:{
-        myFunction:function(){
-            return "测试Methods!";
-        },
-        myFunction1:function(param){
-            return "测试Methods!"+param;
-        },
-        myFunction2:function(param){
-            return "测试Methods!"+param+"   "+this.name;
-        }
     }
 });
 
