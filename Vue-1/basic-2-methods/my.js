@@ -10,6 +10,9 @@ new Vue({
         },
         myFunction1:function(param){
             return "测试Methods!"+param;
+        },
+        myFunction2:function(param){
+            return "测试Methods!"+param+"   "+this.name;
         }
     }
 });
