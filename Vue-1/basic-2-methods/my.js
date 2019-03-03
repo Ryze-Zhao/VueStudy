@@ -7,6 +7,9 @@ new Vue({
     methods:{
         myFunction:function(){
             return "测试Methods!";
+        },
+        myFunction1:function(param){
+            return "测试Methods!"+param;
         }
     }
 });
