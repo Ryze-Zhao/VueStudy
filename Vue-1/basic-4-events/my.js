@@ -10,6 +10,9 @@ new Vue({
         },
         sub:function(){
             this.age--;
+        },
+        addNum:function(num){
+            this.age+=num;
         }
     }
 });

@@ -17,6 +17,9 @@
         <button v-on:dblclick="add()">加一岁</button>
         <button v-on:dblclick="sub()">减一岁</button>
 
+         <!--以下是使用传参复用-->
+         <button v-on:click="addNum(1)">加一岁</button>
+         <button v-on:click="addNum(100)">加100岁</button>
         <p>This age is {{age}}</p>
     </div>
     <script src="my.js"></script>
