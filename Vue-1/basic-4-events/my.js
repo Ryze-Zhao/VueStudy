@@ -1,26 +1,26 @@
 //实例化Vue对象
 new Vue({
-    el:"#basic-1",
-    data:{
-        age:50,
-        x:0,
-        y:0
+    el: "#basic-1",
+    data: {
+        age: 50,
+        x: 0,
+        y: 0
     },
-    methods:{
-        add:function(){
+    methods: {
+        add: function () {
             this.age++;
         },
-        sub:function(){
+        sub: function () {
             this.age--;
         },
-        addNum:function(num){
-            this.age+=num;
+        addNum: function (num) {
+            this.age += num;
         },
-        updateXY:function(event){
-               console.log(event);
-               //这里一直说未定义
-               // this.x=event.offsetX;
-                //this.y=event.offsetY;
+        //不同的浏览器内核，获取event的方式不一样，具体参照https://blog.csdn.net/qq_41605091/article/details/82465356
+        updateXY: function () {
+            //console.log(event);
+            this.x = event.offsetX;
+            this.y = event.offsetY;
         }
     }
 });
