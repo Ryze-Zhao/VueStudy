@@ -2,7 +2,9 @@
 new Vue({
     el:"#basic-1",
     data:{
-        age:50
+        age:50,
+        x:0,
+        y:0
     },
     methods:{
         add:function(){
@@ -13,6 +15,12 @@ new Vue({
         },
         addNum:function(num){
             this.age+=num;
+        },
+        updateXY:function(event){
+               console.log(event);
+               //这里一直说未定义
+               // this.x=event.offsetX;
+                //this.y=event.offsetY;
         }
     }
 });
