@@ -1,0 +1,58 @@
+<!-- 阻止单击事件继续传播 -->
+<!-- <a v-on:click.stop="doThis"></a> -->
+
+<!-- 提交事件不再重载页面 -->
+<!-- <form v-on:submit.prevent="onSubmit"></form> -->
+
+<!-- 修饰符可以串联 -->
+<!-- <a v-on:click.stop.prevent="doThat"></a> -->
+<!--  -->
+<!-- 只有修饰符 -->
+<!-- <form v-on:submit.prevent></form> -->
+
+<!-- 添加事件监听器时使用事件捕获模式 -->
+<!-- 即元素自身触发的事件先在此处理，然后才交由内部元素进行处理 -->
+<!-- <div v-on:click.capture="doThis">...</div> -->
+
+<!-- 只当在 event.target 是当前元素自身时触发处理函数 -->
+<!-- 即事件不是从内部元素触发的 -->
+<!-- <div v-on:click.self="doThat">...</div> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>第一课</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <!--basic-1就是根容器-->
+    <div id="basic-1">
+        <!--@等同于v-on-->
+
+        <!--加个once证明只能点击一次了-->
+        <button v-on:click.once="add()">加一岁</button>
+        <button v-on:click="sub()">减一岁</button>
+        <!--以下是双击的-->
+        <button v-on:dblclick="add()">加一岁</button>
+        <button v-on:dblclick="sub()">减一岁</button>
+
+        <!--以下是使用传参复用-->
+        <button v-on:click="addNum(1)">加一岁</button>
+        <button v-on:click="addNum(100)">加100岁</button>
+
+        <p>This age is {{age}}</p>
+        <!--以下是鼠标事件-->
+        <div id="testDiv" v-on:mousemove="updateXY()">当前鼠标位置：({{x}},{{y}})
+            <span v-on:mousemove.stop="">stop Moving</span>
+            <!-- 这样可以执行一个方法后进行阻止跳转，比如登录时，密码错误，阻止提交 -->
+            <a v-on:click.prevent="alert(1)" href="https://www.hehaozhao.com">dianjiyixia</a>
+        </div>
+    </div>
+    <script src="my.js"></script>
+</body>
+
+</html>
