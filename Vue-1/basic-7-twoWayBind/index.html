@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 键盘的键参考这个网址https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values -->
+<!-- 只有在 `key` 是 `Enter` 时调用 `vm.submit()` -->
+<!-- <input v-on:keyup.enter="submit"> -->
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>第一课</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <!--basic-1就是根容器-->
+    <div id="basic-1">
+        <h1> 键盘 Events /双向绑定肯定和input、textarea、select等有关</h1>
+        <label>姓名：</label>
+        <!-- 如果不写.enter的话就会一直触发 -->
+        <input type="text" v-on:keyup.enter="logName">
+        <label>年龄：</label>
+         <!-- 需要按alt+enter才有效 -->
+        <input type="text" v-on:keyup.alt.enter="logAge">        
+    </div>
+    <script src="my.js"></script>
+</body>
+
+</html>
