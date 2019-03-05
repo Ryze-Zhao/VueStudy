@@ -1,0 +1,25 @@
+<template>
+<!-- 通常根据文件名改 -->
+  <div class="users">
+    <ul>
+      <li v-for="user in users">{{user}}</li>
+    </ul>
+  </div>
+</template>
+
+<script>
+  export default {
+    // 上边Class名是什么这里跟着
+    name: 'users',
+    data() {
+      return {
+        users: ["Mario", "Luffy", "Yoshi"]
+      }
+    }
+  }
+</script>
+
+
+<style scoped>
+
+</style>
