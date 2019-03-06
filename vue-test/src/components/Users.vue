@@ -21,8 +21,8 @@
 </script>
 
 
-<style>
-  h1 {
-    color: green
-  }
-</style>
+<style scoped>
+    h1{
+      color: green
+    }
+    </style>
