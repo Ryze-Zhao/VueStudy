@@ -1,5 +1,5 @@
 <template>
-<!-- 通常根据文件名改 -->
+  <!-- 通常根据文件名改 -->
   <div class="users">
     <h1>Users中的H1标签</h1>
     <ul>
@@ -21,4 +21,8 @@
 </script>
 
 
-<style></style>
+<style>
+  h1 {
+    color: green
+  }
+</style>
