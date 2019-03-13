@@ -1,22 +1,30 @@
 <template>
-  <div class="hello">
-    
-  </div>
-</template>
-
-<script>
-export default {
-  name: 'HelloWorld',
-  data () {
-    return {
+  <footer>
+    <p>{{copyright}}</p>
+  </footer>
+ </template>
+ 
+ <script>
+ export default {
+   name: 'app-footer',
+   data () {
+     return {
+      copyright:"Footer Copy 2019"
+     }
+   },components: {
      
-    }
-  },components: {
-    
-  }
-}
-</script>
-
-<style scoped>
-
-</style>
+   }
+ }
+ </script>
+ 
+ <style scoped>
+ footer{
+   background:  #222;
+   padding: 6px;
+ }
+ p{
+   color: lightgreen;
+   text-align: center;
+ }
+ </style>
+ 

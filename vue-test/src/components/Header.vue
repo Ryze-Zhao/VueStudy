@@ -1,15 +1,15 @@
 <template>
-  <div class="hello">
-    
-  </div>
+ <header>
+   <h1>{{title}}</h1>
+ </header>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'app-header',
   data () {
     return {
-     
+     title:"Vue.js Demo"
     }
   },components: {
     
@@ -18,5 +18,12 @@ export default {
 </script>
 
 <style scoped>
-
+header{
+  background: lightgreen;
+  padding: 10px;
+}
+h1{
+  color: #222;
+  text-align: center;
+}
 </style>
